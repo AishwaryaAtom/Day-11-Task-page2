@@ -1,0 +1,147 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+   
+  }
+  
+  .box {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  .box-content{
+    display: flex;
+    gap:10px
+  }
+  .profile-img-box{
+    border:1px solid black;
+    padding: 10px;
+  }
+  .profile-img{
+    border:1px solid black;
+    width: 100px;
+    height: 149px;
+    border-radius: 62% / 62%;
+  }
+  .event-title{
+    text-align: center;
+  }
+  .book-now-btn{
+    padding: 5px;
+    background-color: rgb(85, 85, 151);
+    color: white;
+  }
+  .sold-out-btn{
+    padding: 5px;
+    background-color:rgb(238, 23, 23);
+    color: white;
+  }
+  .event-details {
+    padding: 30px;
+  }
+  .event-details p{
+ 
+    font-size:18px;
+  }
+  .search-inp{
+text-align: center;
+  }
+  .search-inp input{
+    padding:10px;
+    width:500px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .search-inp input::placeholder{
+    text-align: center;
+
+  }
+
+  /*Update page Design */
+
+  .container{
+    width:60%;
+    margin:0 auto;
+  }
+ .content-border{
+  border:1px solid black;
+  padding:10px;
+  width: 80%;
+  margin: 0 auto;
+
+ }
+ .box-width{
+  width:30%;
+  
+
+ }
+
+
+
+ .box-content-padding{
+  display: flex;
+  gap:50px;
+  padding:30px;
+
+ }
+ .flex-width{
+  display: flex;
+  gap:10px;
+  width:100%;
+  align-items: center;
+  justify-content: end;
+  padding:10px;
+
+ }
+ .flex-width span{
+  width:50%;
+  text-align:end;
+ }
+ .flex-width select{
+  width:49%;
+ }
+ .flex-width input{
+  width:50%;
+ }
+ .label-title{
+  text-align: end;
+  width:54%;
+ }
+.buttons-width{
+  justify-content: center !important;
+
+}
+.submit-btn{
+  padding: 5px 40px;
+  background-color: green;
+  color:white;
+}
+.cancel-btn{
+  padding: 5px 40px;
+  background-color: red;
+  color:white;
+}
+
+ @media (max-width: 768px) {
+  .box-content-padding{
+ flex-wrap: wrap;
+  }
+  .flex-width{
+    flex-wrap: wrap;
+ justify-content: unset;
+   
+  }
+  .flex-width span{
+    text-align:left;
+  }
+  .flex-width input,select{
+    width: 100% !important;
+  }
+}
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
+    }
+  }
